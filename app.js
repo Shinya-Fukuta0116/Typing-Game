@@ -32,6 +32,14 @@ function getRandomQuote() {
     .then(data => data.content)
 };
 
+function pronounce() {
+  let word = document.getElementById('quoteDisplay').value;
+  let u = new SpeechSynthesisUtterance();
+  u.lang = 'en-US';
+  u.text = word;
+  speechSynthesis.speak(u);
+}
+
 async function renderNewQuote() {
   const quote = await getRandomQuote()
   quoteDisplayElement.innerText = ``
