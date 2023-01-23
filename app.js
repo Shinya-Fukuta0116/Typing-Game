@@ -32,6 +32,8 @@ function getRandomQuote() {
     .then(data => data.content)
 };
 
+'use strict'
+
 function pronounce() {
   let word = document.getElementById('quoteDisplay').value;
   let u = new SpeechSynthesisUtterance();

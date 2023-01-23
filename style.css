@@ -38,6 +38,10 @@ body{
   margin-right: calc(1rem + 2px);
 }
 
+i{
+  cursor: pointer;
+}
+
 .quote-Input{
   background-color: transparent;
   border: 2px solid #A1922E;
