@@ -18,7 +18,20 @@ body{
   background-size: cover;
 }
 
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
 .container{
+  position: absolute;
   background-color: #edd642ee;
   padding: 1rem;
   border-radius: .5rem;
@@ -30,7 +43,7 @@ body{
   position: absolute;
   top: 2rem;
   font-size: 3rem;
-  color: #f0db4f;
+  color: #f0da4fc9;
   font-weight: bold;
 }
 
@@ -74,7 +87,7 @@ footer{
   height: auto;
   width: 100vh;
   padding-top: 40px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.762);
   position: absolute;
   bottom: 0;
 }
@@ -112,7 +125,7 @@ footer{
 }
 .socials a{
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.762);
 }
 
 .socials a i{
